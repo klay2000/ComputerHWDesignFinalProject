@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Dec  5 00:28:45 2021
+# Process ID: 15808
+# Current directory: C:/Users/Klayton Smith/Desktop/ComputerHWDesignFinalProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18996 C:\Users\Klayton Smith\Desktop\ComputerHWDesignFinalProject\final-project-dash.xpr
+# Log file: C:/Users/Klayton Smith/Desktop/ComputerHWDesignFinalProject/vivado.log
+# Journal file: C:/Users/Klayton Smith/Desktop/ComputerHWDesignFinalProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Klayton Smith/Desktop/ComputerHWDesignFinalProject/final-project-dash.xpr}
+update_compile_order -fileset sources_1
+save_project_as final-project-dash {C:/Users/Klayton Smith/Desktop/ComputerHWDesignFinalProject/final-project-dash} -force
