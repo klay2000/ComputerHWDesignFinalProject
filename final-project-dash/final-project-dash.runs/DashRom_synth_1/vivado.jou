@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Dec  5 21:01:06 2021
+# Process ID: 21748
+# Current directory: C:/Users/Klayton Smith/Desktop/ComputerHWDesignFinalProject/final-project-dash/final-project-dash.runs/DashRom_synth_1
+# Command line: vivado.exe -log DashRom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DashRom.tcl
+# Log file: C:/Users/Klayton Smith/Desktop/ComputerHWDesignFinalProject/final-project-dash/final-project-dash.runs/DashRom_synth_1/DashRom.vds
+# Journal file: C:/Users/Klayton Smith/Desktop/ComputerHWDesignFinalProject/final-project-dash/final-project-dash.runs/DashRom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DashRom.tcl -notrace

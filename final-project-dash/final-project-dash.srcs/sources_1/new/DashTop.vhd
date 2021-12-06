@@ -38,13 +38,55 @@ entity DashTop is
         green : out STD_LOGIC_VECTOR (3 downto 0);
         blue : out STD_LOGIC_VECTOR (3 downto 0);
         hsync : out STD_LOGIC;
-        vsync : out STD_LOGIC
+        vsync : out STD_LOGIC;
+        btn : in STD_LOGIC_VECTOR(4 downto 0)
     );
 end DashTop;
 
 architecture Behavioral of DashTop is
 
-begin
+    signal segs : std_logic_vector(70 downto 0);
+    signal rpm : std_logic_vector(13 downto 0);
+    signal throttle : std_logic_vector(6 downto 0);
+    signal gear : std_logic_vector(2 downto 0);
+    signal speed : std_logic_vector(7 downto 0);
+    signal q : std_logic_vector(30 downto 0);
 
+begin
+    demodiv : entity work.clkdiv
+    port map(
+        mclk => mclk,
+        clr => btn(0),
+        count => q
+    );
+
+    gear <= q(29 downto 27);
+    speed <= q(28 downto 21);
+    throttle <= q(27 downto 21);
+    rpm <= q(27 downto 14);
+
+    encoder : entity work.DashEncoder
+    port map(
+        mclk => mclk,
+        clr => btn(0),
+        rpm => rpm,
+        throttle => throttle,
+        gear => gear,
+        speed => speed,
+        segments => segs
+    
+    );
+
+    fakelcd : entity work.DashFakeLCD
+    port map(
+        mclk => mclk,
+        clr => btn(0),
+        segments => segs,
+        hsync => hsync,
+        vsync => vsync,
+        red => red,
+        green => green,
+        blue => blue
+    );
 
 end Behavioral;

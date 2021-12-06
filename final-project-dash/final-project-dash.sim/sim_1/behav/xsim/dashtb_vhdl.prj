@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../final-project-dash.srcs/sources_1/imports/Downloads/vga_640x480.vhd" \
+"../../../../final-project-dash.srcs/sources_1/new/DashImg.vhd" \
+"../../../../final-project-dash.srcs/sources_1/new/DashFakeLCD.vhd" \
+"../../../../final-project-dash.srcs/sim_1/new/dashtb.vhd" \
+
+# Do not sort compile order
+nosort

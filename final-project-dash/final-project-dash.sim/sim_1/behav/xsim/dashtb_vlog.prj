@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../final-project-dash.gen/sources_1/ip/pixelclock" \
+"../../../../final-project-dash.gen/sources_1/ip/pixelclock/pixelclock_clk_wiz.v" \
+"../../../../final-project-dash.gen/sources_1/ip/pixelclock/pixelclock.v" \
+"../../../../final-project-dash.gen/sources_1/ip/DashRom/sim/DashRom.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
